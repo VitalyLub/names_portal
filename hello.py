@@ -239,4 +239,5 @@ for i in range(len(columns_to_compare)):
         counter += 1
 data['score'] = (counter - data['score']) / counter
 
-st.write(data.sort_values(by=['score', 'population'], ascending=[False, False]))
+sorted_data = data[['name', 'score', 'population','is_increasing_name','is_timeless_name','is_common_muslim','is_shared_boys_girls','is_common_name','is_international_name','is_bible_name','is_nature_name','is_art_name','is_light_name','is_short_name']].sort_values(by=['score', 'population'], ascending=[False, False]).reset_index(drop=True)
+st.dataframe(sorted_data, hide_index=True)
