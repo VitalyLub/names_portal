@@ -57,6 +57,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown(
+    """
+    <br>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <br>
+    """,
+    unsafe_allow_html=True
+)
 
 if selected_name in boys_names and selected_name in girls_names:
     last_rows = [

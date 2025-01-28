@@ -322,6 +322,6 @@ names_to_show = sorted_data['name'].tolist()
 
 for name in names_to_show:
     st.markdown('<div class="rtl-text">' + "- " + name + '</div>', unsafe_allow_html=True)
-    time.sleep(0.01)
+    time.sleep(0.02)
 
 #st.dataframe(sorted_data, hide_index=True)
