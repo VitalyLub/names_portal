@@ -137,7 +137,7 @@ df_girls = df_girls.rename(columns={'autumn_score': 'is_autumn_name'})
 data = df_boys
 
 # Page Configuration
-st.set_page_config(page_title="פורטל שמות", layout="centered")
+st.set_page_config(page_title="Name Matcher", layout="centered", page_icon="🧩")
 
 st.markdown(
     """
@@ -200,7 +200,7 @@ st.markdown(
 )
 
 # App Title
-st.markdown('<h1 class="centered-title">👶 פורטל שמות 👧</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="centered-title">👶 שם לפי העדפה 👧</h1>', unsafe_allow_html=True)
 
 
 BOY_MSG = "👶 בן"
