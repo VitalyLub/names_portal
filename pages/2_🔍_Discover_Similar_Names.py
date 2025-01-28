@@ -315,7 +315,7 @@ data['pop_delta'] = abs(name_the_user_wanted['population'].tolist()[0] - data['p
 
 sorted_data = data.sort_values(by=['score', 'pop_delta'], ascending=[True, True])
 sorted_data = sorted_data[sorted_data['name'] != selected_name]
-sorted_data = sorted_data[sorted_data['population'] >= 20]
+sorted_data = sorted_data[sorted_data['population'] >= 100]
 sorted_data = sorted_data[:20]
 
 names_to_show = sorted_data['name'].tolist()
