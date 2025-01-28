@@ -610,6 +610,7 @@ if center.button("מצאו את השמות המתאימים ביותר עבור�
         st.markdown(f'<div class="rtl-text"><h5>לא ביקשתם כלום, מדפיסים רשימה אקראית של שמות</h5></div>', unsafe_allow_html=True)
         lst = sorted_data['name'].tolist()
         shuffle(lst)
+        lst = lst[0:how_many_show_to_show]
         lst.sort()
         for i in lst[0:how_many_show_to_show]:
             st.markdown('<div class="rtl-text">' + "- " + i + '</div>', unsafe_allow_html=True)
