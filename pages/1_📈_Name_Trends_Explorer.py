@@ -3,7 +3,7 @@ import time
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="Plotting Demo", page_icon="📈")
+st.set_page_config(page_title="Name Trends Explorer", page_icon="📈")
 
 df_boys = pd.read_csv("boys.csv")
 df_girls = pd.read_csv("girls.csv")

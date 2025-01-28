@@ -137,7 +137,7 @@ df_girls = df_girls.rename(columns={'autumn_score': 'is_autumn_name'})
 data = df_boys
 
 # Page Configuration
-st.set_page_config(page_title="פורטל שמות", layout="centered", page_icon="📈")
+st.set_page_config(page_title="Discover Similar Names", layout="centered", page_icon="🔍") 
 
 st.markdown(
     """
@@ -288,6 +288,8 @@ st.markdown(
 )
 
 # The selectbox with its label
+
+
 selected_name = st.selectbox('בחרו שם:', options=all_names, index=all_names.index('יובל'))
 
 
